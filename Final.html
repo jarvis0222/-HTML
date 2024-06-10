@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學習HTML網頁統整</title>
+    <meta name="description" content="這是一個包含多種 HTML 元素和功能的新手教學網頁">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            padding: 2em;
+            margin: 2em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+        }
+        pre {
+            background: #f4f4f4;
+            border-left: 5px solid #ccc;
+            margin: 1em 0;
+            padding: 1em;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>學習HTML網頁統整</h1>
+    </header>
+    <nav>
+        <!-- 導航連結 -->
+        <a href="#headings">標題</a>
+        <a href="#lists">列表</a>
+        <a href="#tables">表格</a>
+        <a href="#links">超連結</a>
+        <a href="#breaks-comments">換行、註解、空格</a>
+        <a href="#anchors">錨點</a>
+        <a href="#images">圖片</a>
+        <a href="#form-elements">表單元素</a>
+        <a href="#text-formatting">文字格式</a>
+        <a href="#mp3">播放音樂</a>
+        <a href="#form-validation">表單驗證</a>
+        <a href="#datalist">數據列表</a>
+        <a href="#details">詳細信息和摘要</a>
+        <a href="#progress">進度條</a>
+        <a href="#nav-bar">導航條</a>
+        <a href="#canvas">HTML5 畫布</a>
+        <a href="#svg">SVG 圖形</a>
+        <a href="#range">輸入範圍</a>
+        <a href="#map">地圖嵌入</a>
+        <a href="#timezone">時區顯示</a>
+        <a href="#pickers">日期、時間和顏色選擇器</a>
+        <a href="#flexbox">Flexbox 布局</a>
+        <a href="#出處">資料來源</a>
+    </nav>
+
+    <section id="headings">
+        <h2>標題</h2>
+        <h1>這是 H1 標題</h1>
+        <h2>這是 H2 標題</h2>
+        <h3>這是 H3 標題</h3>
+        <h4>這是 H4 標題</h4>
+        <h5>這是 H5 標題</h5>
+        <h6>這是 H6 標題</h6>
+    </section>
+
+    <section id="lists">
+        <h2>有序列表</h2>
+        <ol>
+            <li>第一項</li>
+            <li>第二項</li>
+            <li>第三項</li>
+        </ol>
+        <h2>無序列表</h2>
+        <ul>
+            <li>項目一</li>
+            <li>項目二</li>
+            <li>項目三</li>
+        </ul>
+    </section>
+
+    <section id="tables">
+        <h2>表格</h2>
+        <table border="1">
+            <tr>
+                <th>名稱</th>
+                <th>年齡</th>
+            </tr>
+            <tr>
+                <td>小王</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>小美</td>
+                <td>16</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="links">
+        <h2>超連結</h2>
+        <p>\<a href="https://mateam.net/html-escape-characters/">符號查詢網頁</a></p>
+    </section>
+
+    <section id="breaks-comments">
+        <h2>換行、註解、空格</h2>
+        <p>這是一段文字。<br>這是下一行文字。<!-- 這是一個註解 -->這裡有一個&nbsp;空格。</p>
+    </section>
+
+    <section id="anchors">
+        <h2 id="anchor">錨點</h2>
+        <p><a href="#anchor">回到錨點</a></p>
+    </section>
+
+    <section id="images">
+        <h2>圖片</h2>
+        <img src="https://example.com/image.jpg" alt="描述圖像">
+    </section>
+
+    <section id="form-elements">
+        <h2>文字輸入框</h2>
+        <form>
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <h2>日期與數字</h2>
+            <label for="birthday">生日：</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <label for="age">年齡：</label>
+            <input type="number" id="age" name="age"><br><br>
+            
+            <h2>文字區塊</h2>
+            <label for="message">留言：</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            
+            <h2>Radio Button 和 Checkbox</h2>
+            <label>性別：</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">女</label><br><br>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">訂閱</label><br><br>
+            
+            <h2>下拉式選單</h2>
+            <label for="country">國家：</label>
+            <select id="country" name="country">
+                <option value="tw">台灣</option>
+                <option value="us">美國</option>
+                <option value="jp">日本</option>
+            </select><br><br>
+            
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
+    <section id="text-formatting">
+        <h2>文字格式</h2>
+        <p><b>粗體文字</b></p>
+        <p><strong>加強文字</strong></p>
+        <p><i>斜體文字</i></p>
+        <p><em>強調文字</em></p>
+    </section>
+
+    <section id="mp3">
+        <h2>播放音樂</h2>
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            您的瀏覽器不支援音樂播放。
+        </audio>
+    </section>
+
+    <section id="form-validation">
+        <h2>表單驗證</h2>
+        <form>
+            <label for="username">用戶名：</label>
+            <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+
+    <section id="datalist">
+        <h2>數據列表</h2>
+        <form>
+            <label for="browser">選擇你的瀏覽器：</label>
+            <input list="browsers" id="browser" name="browser">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+        </form>
+    </section>
+
+    <section id="details">
+        <h2>詳細信息和摘要</h2>
+        <details>
+            <summary>點擊展開詳細信息</summary>
+            <p>這是一些詳細信息的內容。</p>
+        </details>
+    </section>
+
+    <section id="progress">
+        <h2>進度條</h2>
+        <progress value="70" max="100">70%</progress>
+    </section>
+
+    <section id="nav-bar">
+        <h2>導航條</h2>
+        <nav>
+            <a href="#headings">標題</a>
+            <a href="#lists">列表</a>
+            <a href="#tables">表格</a>
+            <a href="#links">超連結</a>
+            <!-- 更多導航連結... -->
+        </nav>
+    </section>
+
+    <section id="canvas">
+        <h2>HTML5 畫布</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0, 0, 150, 75);
+        </script>
+    </section>
+
+    <section id="svg">
+        <h2>SVG 圖形</h2>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+    </section>
+
+    <section id="range">
+        <h2>輸入範圍</h2>
+        <label for="volume">音量：</label>
+        <input type="range" id="volume" name="volume" min="0" max="11">
+    </section>
+
+    <section id="map">
+        <h2>地圖嵌入</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9859289046694!2d-122.0842496853173!3d37.42199997982422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e6b5e256df%3A0xf2ae9db62a3e38b8!2sGoogleplex!5e0!3m2!1sen!2sus!4v1638395023470!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="timezone">
+        <h2>時區顯示</h2>
+        <p>當前時區：<span id="timezone-display"></span></p>
+        <script>
+            document.getElementById("timezone-display").textContent = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        </script>
+    </section>
+
+    <section id="pickers">
+        <h2>日期、時間和顏色選擇器</h2>
+        <label for="date-picker">選擇日期：</label>
+        <input type="date" id="date-picker" name="date-picker"><br><br>
+        
+        <label for="time-picker">選擇時間：</label>
+        <input type="time" id="time-picker" name="time-picker"><br><br>
+        
+        <label for="color-picker">選擇顏色：</label>
+        <input type="color" id="color-picker" name="color-picker">
+    </section>
+
+    <section id="flexbox">
+        <h2>Flexbox 布局</h2>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="background-color: lightcoral; width: 100px; height: 100px;">Box 1</div>
+            <div style="background-color: lightblue; width: 100px; height: 100px;">Box 2</div>
+            <div style="background-color: lightgreen; width: 100px; height: 100px;">Box 3</div>
+        </div>
+    </section>
+
+    <section id="出處">
+        <h2>資料來源</h2>
+        <p> <a href="https://www.youtube.com/@CodeShiba">https://www.youtube.com/@CodeShiba</a></p>
+        <p> <a href="https://www.youtube.com/@darenge2023/featured">https://www.youtube.com/@darenge2023/featured</a></p>
+        <p> <a href="https://chatgpt.com/">https://chatgpt.com/</a></p>
+    </section>
+</body>
+</html>
